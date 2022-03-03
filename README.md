@@ -8,3 +8,5 @@ To where it bent in the undergrowth.
 
 
 I have many favourite artists. 
+
+http://localhost/phpmyadmin/index.php?route=/database/structure&server=1&db=test2
