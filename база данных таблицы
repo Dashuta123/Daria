@@ -1,0 +1,9 @@
+CREATE TABLE user (id int(10) PRIMARY KEY AUTO_INCREMENT, name VARCHAR(100), familia VARCHAR(100), otchectvo VARCHAR(100), denrozhdenia DATETIME);
+
+kategoriya CREATE TABLE (id INT(10) PRIMARY KEY AUTO_INCREMENT, name_categories VARCHAR(100), parent_categories INT(10));
+
+teg CREATE TABLE (id INT(10) PRIMARY KEY AUTO_INCREMENT, имя VARCHAR(100), цвет VARCHAR(100));
+
+CREATE TABLE proyekt (id INT(10) PRIMARY KEY AUTO_INCREMENT, name_project VARCHAR(100));
+
+zadacha CREATE TABLE (id int(10) PRIMARY KEY AUTO_INCREMENT, name_task VARCHAR(100), date_start DATETIME, date_end DATETIME);
