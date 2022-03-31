@@ -1,0 +1,29 @@
+ALTER TABLE user MODIFY COLUMN gende INT(10);
+ALTER TABLE user
+ADD CONSTRAINT gende
+FOREIGN KEY gende REFERENCES gende(id);
+
+ALTER TABLE user DROP CONSTRAINT company;
+
+UPDATE user SET gende = 1;
+UPDATE user SET gende = 2 WHERE id in(2, 3, 4, 5, 7);
+
+
+UPDATE user SET company = 1 WHERE id in(5, 10);
+UPDATE user SET company = 2 WHERE id in(4, 9, 14);
+UPDATE user SET company = 3 WHERE id in = 3;
+UPDATE user SET company = 4 WHERE id in(2, 7, 12);
+UPDATE user SET company = 5 WHERE id in(1, 6, 11);
+
+ALTER TABLE user MODIFY COLUMN gende INT(10);
+ALTER TABLE user MODIFY COLUMN company INT(10);
+
+ALTER TABLE user
+ADD CONSTRAINT gendes
+FOREIGN KEY (gende)
+REFERENCES gendes(id);
+
+ALTER TABLE user
+ADD CONSTRAINT companies
+FOREIGN KEY (company)
+REFERENCES companies(id);
