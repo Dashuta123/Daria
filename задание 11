@@ -1,0 +1,2 @@
+SELECT company.name, SUBSTRING(user.email, (LOCATE('@', user.email))+1) AS `domen`, COUNT(*) AS `count of users` FROM company 
+JOIN user ON company.id = user.company GROUP BY `domen`, company.name ORDER BY company.namе;
