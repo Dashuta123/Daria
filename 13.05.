@@ -1,0 +1,1 @@
+SELECT titles.title, AVG(salaries.salary) FROM titles INNER JOIN salaries ON titles.try = salaries.tyr GROUP BY titles.title;
